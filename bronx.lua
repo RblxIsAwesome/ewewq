@@ -4206,7 +4206,7 @@ do
                 end
 
                 if Config.TheBronx._Modifications.InfiniteClips then
-                    debug.setupvalue(getsenv(Weapon:FindFirstChild("GunScript_Local")).Reload, 3, 9e17)
+                    debug.setupvalue(getsenv(Weapon:FindFirstChild("GunScript_Local")).Reload, 3, 1000)
 
                     SetInfiniteClips = false
                 end
@@ -16216,4 +16216,5 @@ task.delay(5, function()
     if screenGui then
         screenGui:Destroy()
     end
+
 end)
